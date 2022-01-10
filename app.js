@@ -6,7 +6,7 @@ require("dotenv").config();
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 const session = require("express-session");
-const bcrypt = require('bcryptjs');
+const bcrypt = require('bcrypt');
 const loggedInUserGuard = require('./middlewares/loggedInUserGuard');
 
 const taskController = require('./routes/taskController');
