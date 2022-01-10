@@ -1,0 +1,46 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+<div class="container">
+
+    {{#with list}}
+    <div class="row">
+        <div class="col-md-5">
+            <h3 style="color: #AF0000; width: 100%; margin-left: 446px; margin-bottom: 30px">PRODUCT DETAILS</h3>
+
+            <div class="well well-lg" style="width: 120%; margin-left: 270px">
+                <div class="project-info-box mt-0">
+                    <p class="mb-0">{{this.detail}}</p>
+                </div><!-- / project-info-box -->
+
+                <div class="project-info-box">
+                    <p><b>Name: </b>{{this.name}}</p>
+                    <p><b>Style: </b> {{this.productid}}</p>
+                    <p class="mb-0"><b>Price: </b> {{this.price}}</p>
+                </div>
+                <div class="project-info-box">
+                    <p><b>Brand: </b> {{this.brand}}</p>
+                    <p><b>Color: </b>{{this.color}}</p>
+                </div><!-- / project-info-box -->
+            </div>
+        </div><!-- / column -->
+        <div class="row">
+        </div>
+        <h4 style="color: #AF0000; width: 100%; margin-left: 438px; margin-bottom: 40px">Detailed pictures of the product</h4>
+        <div class="col-sm-12 padding-right">
+        <div class="col-sm-6">
+
+            <img src="{{this.image1}}" alt="Error Image" class="rounded">
+            <img src="{{this.image2}}" alt="Error Image" class="rounded">
+
+
+        </div><!-- / column -->
+            <div class="col-sm-6">
+
+
+                <img src="{{this.image3}}" alt="Error Image" class="rounded">
+                <img src="{{this.image4}}" alt="Error Image" class="rounded">
+
+            </div><!-- / column -->
+        </div>
+    </div>
+    {{/with}}
+</div>

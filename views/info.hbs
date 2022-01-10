@@ -1,0 +1,61 @@
+<div id="page-inner">
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Information Of my account</h2>
+            <h5>Welcome to my web, Love to see you back! </h5>
+
+        </div>
+    </div>
+    <!-- /. ROW  -->
+    <hr />
+    <div class="row">
+        <div class="col-md-12">
+            <!-- Form Elements -->
+            <div class="panel panel-default">
+                <div class="panel-heading"></div>
+                <div class="panel-body">
+                    <div class="reg-form">
+                        <div class="container">
+                            <div class="reg">
+                                <h3>Information Of my account</h3>
+                                <p style="margin-top: -20px">Welcome, please enter the following details to continue.</p>
+                                {{#if user}}
+                                    <form action="/info" method="post" autocomplete="off">
+                                        <input type="hidden" name="_id" value="{{user.id}}">
+                                        <div class="form-group">
+                                            <label>Username</label>
+                                            <input type="text" class="form-control" name="username" value="{{user.username}}" placeholder="Task Name">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label>Lastname</label>
+                                            <input type="text" class="form-control" name="name" value="{{user.name}}" placeholder="Description Name">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label>mobilephone</label>
+                                            <input type="text" class="form-control" name="number" value="{{user.number}}" placeholder="Description Name">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label>Email</label>
+                                            <input type="text" class="form-control" name="email" value="{{user.email}}" placeholder="Description Name">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <button type="submit" style="margin-left: 480px" class="btn btn-primary">
+                                                Submit
+                                            </button>
+                                        </div>
+                                    </form>
+                                {{/if}}
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Form Elements -->
+    </div>
+</div>

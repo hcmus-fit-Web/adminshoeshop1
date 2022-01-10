@@ -1,0 +1,85 @@
+<div id="page-inner">
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Add/Update Product </h2>
+            <h5>Welcome to my web , Love to see you back! </h5>
+
+        </div>
+    </div>
+    <!-- /. ROW  -->
+    <hr />
+
+    <div class="row">
+        <div class="col-md-12">
+            <!-- Advanced Tables -->
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    Product List
+                </div>
+                <div class="panel-body">
+                    <form action="/" method="POST" autocomplete="off" enctype="multipart/form-data">
+                        <input type="hidden" name="_id" value="{{product._id}}">
+
+                        <div class="form-group">
+                            <label>Style</label>
+                            <input type="text" class="form-control" name="productid" value="{{product.productid}}" placeholder="Task Name">
+                        </div>
+                        <div class="form-group">
+                            <label>Price</label>
+                            <input type="text" class="form-control" name="price" value="{{product.price}}" placeholder="Description Name">
+                        </div>
+
+
+                        <div class="form-group">
+                            <label>Name</label>
+                            <input type="text" class="form-control" name="name" value="{{product.name}}" placeholder="Description Name">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Brand</label>
+                            <input type="text" class="form-control" name="brand" value="{{product.brand}}" placeholder="Description Name">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Type</label>
+                            <input type="text" class="form-control" name="type" value="{{product.type}}" placeholder="Description Name">
+                        </div>
+
+
+                        <div class="form-group">
+                            <label>Color</label>
+                            <input type="text" class="form-control" name="color" value="{{product.color}}" placeholder="Description Name">
+                        </div>
+
+
+                        <div class="form-group">
+                            <label>Discount</label>
+                            <input type="text" class="form-control" name="discount" value="{{product.discount}}" placeholder="Description Name">
+                        </div>
+
+
+                        <div class="form-group">
+                            <label>Detail</label>
+                            <input type="text" class="form-control" name="detail" value="{{product.detail}}" placeholder="Description Name">
+                        </div>
+
+                        <div class="form-group">
+                            <label>All Link Image</label>
+                            <input type="file" class="form-control" name="image" multiple>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" style="margin-left: 480px" class="btn btn-primary">
+                                Submit
+                            </button>
+                            <a href="/table" class="btn btn-success">
+                                View All
+                            </a>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+            <!--End Advanced Tables -->
+        </div>
+    </div>
+</div>

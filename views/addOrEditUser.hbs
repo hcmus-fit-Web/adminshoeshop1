@@ -1,0 +1,65 @@
+<div id="page-inner">
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Add/Update Users </h2>
+            <h5>Welcome to my web , Love to see you back! </h5>
+
+        </div>
+    </div>
+    <!-- /. ROW  -->
+    <hr />
+
+    <div class="row">
+        <div class="col-md-12">
+            <!-- Advanced Tables -->
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                   Add/Edit User
+                </div>
+                <div class="panel-body">
+                    <form action="/users" method="POST" autocomplete="off">
+                        <input type="hidden" name="_id" value="{{user._id}}">
+
+                        <div class="form-group">
+                            <label>Username</label>
+                            <input type="text" class="form-control" name="username" value="{{user.username}}" placeholder="Task Name">
+                        </div>
+                        <div class="form-group">
+                            <label>Firstname</label>
+                            <input type="text" class="form-control" name="firstname" value="{{user.firstname}}" placeholder="Description Name">
+                        </div>
+
+
+                        <div class="form-group">
+                            <label>Lastname</label>
+                            <input type="text" class="form-control" name="lastname" value="{{user.lastname}}" placeholder="Description Name">
+                        </div>
+
+                        <div class="form-group">
+                            <label>mobilephone</label>
+                            <input type="text" class="form-control" name="mobilephone" value="{{user.mobilephone}}" placeholder="Description Name">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Password</label>
+                            <input type="text" class="form-control" name="password" value="{{user.password}}" placeholder="Description Name">
+                        </div>
+
+
+                        <div class="form-group">
+                            <button type="submit" style="margin-left: 480px" class="btn btn-primary">
+                                Submit
+                            </button>
+                            <a href="/tableUser" class="btn btn-success">
+                                View All
+                            </a>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+            <!--End Advanced Tables -->
+        </div>
+    </div>
+
+</div>

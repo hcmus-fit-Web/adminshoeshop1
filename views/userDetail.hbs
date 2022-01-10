@@ -1,0 +1,37 @@
+<div class="head-bread">
+    <div class="container">
+    </div>
+</div>
+<!-- reg-form -->
+<div class="reg-form">
+    <div class="container">
+            <div class="col-md-4 col-sm-4" style="width: 50%; margin-top:80px; margin-left: 260px ">
+                <div class="panel panel-danger">
+                    <div class="panel-heading">
+                        <h3>Your Information</h3>
+                    </div>
+                    <div class="panel-body">
+                        {{#with list}}
+
+                            <ul>
+                                <li >First Name: {{this.firstname}} </li>
+                            </ul>
+                            <ul>
+                                <li >Last Name: {{this.lastname}}</li>
+                            </ul>
+                            <ul>
+                                <li >Email and Username: {{this.username}}</li>
+                            </ul>
+                            <ul>
+                                <li >Mobile Number: {{this.phone}}</li>
+                            </ul>
+
+                        {{/with}}
+                    </div>
+                    <div class="panel-footer">
+                    </div>
+                </div>
+        </div>
+
+    </div>
+</div>
