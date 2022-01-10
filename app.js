@@ -6,7 +6,7 @@ require("dotenv").config();
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 const session = require("express-session");
-// const bcrypt = require('bcrypt');
+const bcrypt = require('bcrypt');
 const loggedInUserGuard = require('./middlewares/loggedInUserGuard');
 
 const taskController = require('./routes/taskController');
@@ -54,8 +54,8 @@ app.post('/reset/:email/:id', async (req,res)=>{
   const enpassword = req.body.enpassword;
   const {id} = req.params;
   if (password === enpassword){
-    // const passwordHash = await bcrypt.hash(password,10);
-    await Admin.findOneAndUpdate({_id:id} ,{password:password})
+    const passwordHash = await bcrypt.hash(password,10);
+    await Admin.findOneAndUpdate({_id:id} ,{password:passwordHash})
     res.render('login');
   }
 });
