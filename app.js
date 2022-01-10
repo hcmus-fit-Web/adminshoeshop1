@@ -12,10 +12,10 @@ const loggedInUserGuard = require('./middlewares/loggedInUserGuard');
 const taskController = require('./routes/taskController');
 
 const passport = require('./passport');
-const ForgetRouter = require('../adminshoeshop/routes/forget');
+const ForgetRouter = require('./routes/forget');
 const authRouter = require('./admin/index');
-const Admin = require('../adminshoeshop/models/task.admin');
-const Token = require('../adminshoeshop/models/task.userconfirm');
+const Admin = require('./models/task.admin');
+const Token = require('./models/task.userconfirm');
 require('dotenv').config();
 
 
